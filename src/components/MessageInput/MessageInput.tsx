@@ -13,7 +13,7 @@ function MessageInput() {
 
     // Get the value of the input field
     const formData = new FormData(event.currentTarget);
-    const newMessage = formData.get('text');
+    const newMessage = formData.get('text') as string;
 
     // Trigger the action "sendMessage" if there is a value
     if (newMessage) {

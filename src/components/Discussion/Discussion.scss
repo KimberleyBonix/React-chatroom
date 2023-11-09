@@ -2,6 +2,7 @@
 
 .chat-discussion {
   flex-grow: 2;
+  overflow: auto;
   padding: 3rem;
   display: flex;
   flex-direction: column;
