@@ -1,0 +1,14 @@
+@use '../../styles/variables' as v;
+
+.chat-header {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  border-bottom: v.$border-thin;
+
+  &_avatar {
+    width: 50px;
+    aspect-ratio: 1/1;
+  }
+}

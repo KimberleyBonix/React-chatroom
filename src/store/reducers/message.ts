@@ -2,7 +2,7 @@ import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 import { ChatState, TMessage } from '../../@types/message';
 
 const initialState: ChatState = {
-  messages: ['Hello, world', "J'ai le poil tout neuf"],
+  messages: ['ouais ouais ouais', 'on est loooo'],
 };
 
 const messagesSlice = createSlice({

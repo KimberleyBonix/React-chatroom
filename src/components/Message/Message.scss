@@ -1,0 +1,28 @@
+@use '../../styles/variables' as v;
+
+.message {
+  display: flex;
+  gap: 1rem;
+
+  &__avatar {
+    width: 30px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+    align-self: end;
+  }
+
+  &__content {
+    &-author,
+    &-timestamp {
+      font-size: v.$font-small;
+      color: v.$font-small-color;
+    }
+
+    &-text {
+      background-color: v.$color-light;
+      border-radius: 10px;
+      padding: 1rem;
+    }
+  }
+}

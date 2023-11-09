@@ -1,0 +1,32 @@
+@use '../../styles/variables' as v;
+
+.chat-input {
+  margin: 1.5rem 3rem;
+  background-color: v.$color-medium;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  border: 1px solid transparent;
+
+  &:has(&__text-input:focus),
+  &:hover {
+    border: v.$border-thin;
+  }
+
+  &__text-input {
+    background-color: transparent;
+    border: none;
+    flex-grow: 2;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__send-button {
+    border: none;
+    background-color: v.$color-light;
+    border-radius: 5px;
+  }
+}

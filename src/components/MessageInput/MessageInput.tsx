@@ -2,6 +2,8 @@ import { FormEvent } from 'react';
 import { useAppDispatch } from '../../hooks/redux';
 import { sendMessage } from '../../store/reducers/message';
 
+import './MessageInput.scss';
+
 function MessageInput() {
   const dispatch = useAppDispatch();
 
@@ -22,9 +24,16 @@ function MessageInput() {
     event.currentTarget.reset();
   }
   return (
-    <form onSubmit={handleSubmitMessage}>
-      <input type="text" placeholder="Enter Message" name="text" />
-      <button type="submit">Send</button>
+    <form className="chat-input" onSubmit={handleSubmitMessage}>
+      <input
+        className="chat-input__text-input"
+        type="text"
+        placeholder="Enter Message"
+        name="text"
+      />
+      <button className="chat-input__send-button" type="submit">
+        Send
+      </button>
     </form>
   );
 }
