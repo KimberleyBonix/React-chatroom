@@ -1,0 +1,20 @@
+@use '../../styles/variables' as v;
+
+.login {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(223, 141, 119, 0.3);
+  border-radius: 20px 0 0 20px;
+  display: grid;
+  place-items: center;
+}
+
+.login-panel {
+  background-color: v.$color-light;
+  padding: 2rem;
+  border-radius: 15px;
+
+  & input {
+    display: block;
+  }
+}

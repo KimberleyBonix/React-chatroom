@@ -1,11 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit';
 import messagesSlice from './reducers/message';
+import userSlice from './reducers/user';
 
 const store = configureStore({
   // A la création du store
   // Redux va exécuter chaque reducer avec l'action "@@INIT"
   reducer: {
     messages: messagesSlice.reducer,
+    user: userSlice.reducer,
   },
 });
 
